@@ -8,7 +8,7 @@ st.write('')
 st.write('')
 st.text('Upload a picture of a Rose, Sunflower, Tulip, Daisy or Dandelion')
 
-uploaded_file = st.file_uploader('upload flower picture', type='jpg')
+uploaded_file = st.file_uploader('upload flower picture', type=['jpg', 'jpeg', 'png'])
 if uploaded_file is not None:
 
     st.write('(Orginal image)')
